@@ -8,7 +8,7 @@
         <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/<%=chromeExtensionId%>">
         <link rel="icon" sizes="128x128" href="icon.png">
         <title>OpenTok Meet : <%=room%></title>
-        <link href='//fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
+        <link href="//fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="/js/lib/opentok-editor/opentok-editor.css" type="text/css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" href="/css/subscriber-stats.css" type="text/css" media="screen">
@@ -54,7 +54,7 @@
         <script src="/js/simulcast-service.js" type="text/javascript" charset="utf-8"></script>
     </head>
     <body ng-controller="RoomCtrl" ng-class="{'mouse-move': mouseMove}">
-        <div id='session' ng-class="{'session-connected': connected}">
+        <div id="session" ng-class="{'session-connected': connected}">
             <ot-layout props="{animate:true,bigFixedRatio:true}">
                 <ot-subscriber ng-repeat="stream in streams | filter:notMine"
                     stream="stream"
@@ -93,7 +93,7 @@
             </div>
             <ot-publisher id="screenPublisher"
                 ng-if="sharingMyScreen"
-                props='screenPublisherProps'
+                props="screenPublisherProps"
                 draggable="true">
             </ot-publisher>
         </div>
